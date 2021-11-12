@@ -1,0 +1,165 @@
+*,*::before,*::after{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+:root{
+    --theme-color:hsl(245,75%,52%);
+    --text-color:hsl(224,23%,55%);
+    --title-color:hsl(223, 47%, 23%);
+    --secondary-light:hsl(225, 100%, 94%);
+    --light-color: hsl(225, 100%, 98%);
+    --wg-bd:900;
+    --wg-md:700;
+    --wg-nm:500;
+}
+
+html{
+    font-size:10px;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+img{
+    max-width:100%;
+}
+a{
+    transition: color 200ms linear,border-color 200ms linear;
+    cursor: pointer;
+}
+button{
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 200ms linear;
+}
+
+h1,h2,p{
+    text-align: center;
+    margin:1rem;
+}
+
+body{
+    height:100vh;
+    background-color: var(--secondary-light);
+    background-image: url('./images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width:38rem;
+    border-radius:1.6rem;
+    background-color: #fff;
+   filter:drop-shadow(3px 6px 1rem var(--secondary-light));
+    margin:2vh;
+}
+
+.order-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin:3.4rem 2.6rem;
+}
+
+.order-type{
+   display: flex;
+   align-items: center;
+   width:min(30rem,90%);
+   background-color: var(--light-color);
+   border-radius: 0.8rem;
+   padding:1rem 2rem;
+   margin:1.4rem;
+}
+
+.img-wrap>img{
+    border-radius:1.6rem 1.6rem 0 0;
+}
+
+.heading--{
+    font-size: 2.4rem;
+    font-weight: var(--wg-bd);
+    color:var(--title-color);
+}
+
+.para--{
+    font-size: 1.6rem;
+    color:var(--text-color);
+    font-weight: var(--wg-nm);
+    padding: 0.5rem;
+    line-height: 1.5;
+}
+
+.heading-md--{
+    font-size: 1.5rem;
+    font-weight: var(--wg-md);
+    color:var(--title-color);
+    text-align: left;
+    padding:0.4rem;
+}
+
+.heading-md--::after{
+    content:"$59.99/year";
+    font-size: 1.3rem;
+    font-weight: var(--wg-nm);
+    color:var(--text-color);
+    text-align: left;
+}
+
+.link--{
+    display: inline-block;
+    font-size: 1.3rem;
+    font-weight: var(--wg-md);
+    color:var(--theme-color);
+    margin-left:auto;
+    border-bottom: 2px solid var(--theme-color);
+}
+
+.order-place{
+    background-color: var(--theme-color);
+    font-weight: var(--wg-bd);
+    color:#fff;
+    padding:1.3rem 8.4rem;
+    outline:none;
+    border:none;
+    border-radius: 0.8rem;
+    margin:1rem;
+    font-size:1.3rem;
+    box-shadow:1px 1.2rem 0.7rem var(--secondary-light);
+}
+
+.order-cancel{
+    font-size: 1.2rem;
+    font-weight: var(--wg-md);
+    color:var(--text-color);
+    font-weight: var(--wg-md);
+    margin-top: 1rem;
+}
+
+.order-place:hover,.order-place:focus{
+    background-color:hsl(245,75%,60%) ;
+}
+
+.order-cancel:hover,.order-cancel:focus{
+    color:var(--title-color);
+}
+
+.link--:hover,.link--:focus{
+    border-bottom-color: transparent;
+    color:hsl(245,75%,65%) ; ;
+}
+
+@media only screen  and (max-width:50rem){
+    body{
+        background-image:url("./images/pattern-background-mobile.svg")
+    }
+}
