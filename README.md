@@ -34,6 +34,8 @@ Users should be able to:
 
 - Solution URL: [See on GitHub](https://github.com/Script-D/orderSummaryCard)
 
+- Live Site URL: [Visit](https://youthful-goodall-7d4b8f.netlify.app)
+
 ### Built with
 
 - Semantic HTML5 markup
