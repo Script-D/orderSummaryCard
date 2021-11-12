@@ -26,6 +26,7 @@ img{
 a{
     transition: color 200ms linear,border-color 200ms linear;
     cursor: pointer;
+    text-decoration: none;
 }
 button{
     background: transparent;
@@ -128,13 +129,14 @@ body{
     background-color: var(--theme-color);
     font-weight: var(--wg-bd);
     color:#fff;
-    padding:1.3rem 8.4rem;
+    padding:1.3rem 7.5rem;
     outline:none;
     border:none;
     border-radius: 0.8rem;
     margin:1rem;
     font-size:1.3rem;
     box-shadow:1px 1.2rem 0.7rem var(--secondary-light);
+    width: min(35rem,90%);
 }
 
 .order-cancel{
